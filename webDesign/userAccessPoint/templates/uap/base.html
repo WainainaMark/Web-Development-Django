@@ -8,9 +8,18 @@
     <link rel="stylesheet" href="{% static 'uap/styles.css' %}">
 </head>
 <body>
-    {% block content %}
+    <div id="uapContainer">
+        <div id="uapInformation">
+            <span class="text" id="heading">{% block info %}{%endblock%}</span>
+        </div>
+        <form method="post">
+            {% block content %}
     
-    {% endblock %}
+            {% endblock %}
+        </form>
+        <button type="submit">{% block buttonInfo %}{% endblock %}</button>
+    </div>
+    
     <script src="{% static 'uap/script.js' %}"></script>
 </body>
 </html>

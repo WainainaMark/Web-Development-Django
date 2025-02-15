@@ -2,6 +2,27 @@
 
 {% block title %}Sign In Page{% endblock %}
 
+{% block info %} Create your Account here {% endblock %}
+
 {% block content %}
-    
+    {% csrf_token %}
+    <div class="inputFields">
+        <span class="text">Username</span>
+        {{ form.username }}
+    </div>
+    <div class="inputFields">
+        <span class="text">Email Address</span>
+        {{ form.email }}
+    </div>
+    <div class="inputFields">
+        <span class="text">Password</span>
+        {{ form.password1 }}
+    </div>
+    <div class="inputFields">
+        <span class="text">Retrype Password</span>
+        {{ form.password2 }}
+    </div>
+
 {% endblock %}
+
+{% block buttonInfo %}SignIn{% endblock %}
