@@ -57,6 +57,8 @@ button{
     letter-spacing: 2px;
     cursor: pointer;
     transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 40px;
 }
 
 button:active{
@@ -65,4 +67,10 @@ button:active{
 
 .inputFields{
     margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+    #uapContainer{
+        top: 0px
+    }
 }

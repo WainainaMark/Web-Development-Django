@@ -16,8 +16,8 @@
             {% block content %}
     
             {% endblock %}
+            <button type="submit">{% block buttonInfo %}{% endblock %}</button>
         </form>
-        <button type="submit">{% block buttonInfo %}{% endblock %}</button>
     </div>
     
     <script src="{% static 'uap/script.js' %}"></script>
